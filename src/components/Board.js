@@ -10,8 +10,15 @@ export default class Board extends Component {
     }
   }
 
+  handleCLick(i) {
+    const squares = this.state.squares.slice();
+    squares[i] = 'X';
+    this.setState({squares: squares});
+  }
+
   renderSqueare(i) {
-    return <Square value={this.state.squares[i]}/>
+    return <Square value={this.state.squares[i]} 
+      onClick={(() => this.handleCLick(i))} />
   }
 
   render() {
