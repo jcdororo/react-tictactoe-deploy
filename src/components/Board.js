@@ -5,7 +5,7 @@ import "./Board.css"
 export default class Board extends Component {
 
   renderSqueare(i) {
-    return <Square />
+    return <Square value={i}/>
   }
 
   render() {

@@ -5,7 +5,7 @@ export class Square extends React.Component {
   render() {
     return (
       <button className="square">
-        squeare
+        {this.props.value}
       </button>
     )
   }
