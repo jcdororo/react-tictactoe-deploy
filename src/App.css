@@ -1,9 +1,6 @@
 .game {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 
 .game-info {
